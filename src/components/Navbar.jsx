@@ -7,7 +7,6 @@ import Searchbar from './Searchbar'
 const Navbar = () => {
   return (
     <Stack 
-    border='2px solid red'
     direction='row' 
     alignItems='center'
     p={2}

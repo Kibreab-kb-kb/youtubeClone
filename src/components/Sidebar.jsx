@@ -4,7 +4,7 @@ import {categories} from '../utils/constants'
 
 const Sidebar = () => {
 
-const selectedCategory=''
+const selectedCategory='New'
 
   return (
    <Stack
@@ -21,9 +21,16 @@ const selectedCategory=''
             background:categorie.name===selectedCategory&&"#FC1503",
             color:'white'
             }}
+            key={categorie.name}
             >
-                <span>{categorie.icon}</span>
-                <span>{categorie.name}</span>
+                <span style={{
+                    color:categorie.name===selectedCategory?'white':'red',
+                    marginRight:'15px'}}>{categorie.icon}
+                </span>
+
+                <span style={{
+                    opacity:categorie.name===selectedCategory?'1':'0.8'
+                }}>{categorie.name}</span>
             </button>
         ))
     }

@@ -18,7 +18,15 @@ const Feed = () => {
       variant='body2' sx={{mt:1.5,color:"#fff"}}>
         Copyright 2023 kb kb
       </Typography>
+    </Box>
 
+    <Box>
+      <Typography
+      variant='h4'
+      fontWeight='bold'
+      color='white'>
+        New<span style={{color:'#F31503'}}>videos</span>
+      </Typography>
     </Box>
    </Stack>
   )
