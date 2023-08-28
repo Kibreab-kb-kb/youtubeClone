@@ -1,6 +1,6 @@
 import { Box, Stack, Typography } from '@mui/material'
 import React from 'react'
-import Sidebar from './Sidebar'
+import {Sidebar,Videos} from './'
 
 const Feed = () => {
   return (
@@ -27,6 +27,9 @@ const Feed = () => {
       color='white'>
         New<span style={{color:'#F31503'}}>videos</span>
       </Typography>
+
+      <Videos videos={[]}/>
+
     </Box>
    </Stack>
   )
